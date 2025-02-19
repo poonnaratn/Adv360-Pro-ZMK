@@ -36,22 +36,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                            &mo 3        &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tothaionmac                                                                      &none        &kp J   &kp L             &kp U              &kp Y                 &kp SEMICOLON          &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &none            &mt LEFT_SHIFT ESCAPE  &kp LALT       &kp RCMD  &kp RIGHT_SHIFT  &none        &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                           &mo 9          &none                                   &kp K   &kp H             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LALT  &kp ENTER          &lt 1 BACKSPACE  &kp LCMD               &kp SPACE      &none     &kp ENTER        &lt 4 SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                   &mo 3        &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tothaionmac                                                                             &none        &kp J   &kp L             &kp U              &kp Y                 &kp SEMICOLON          &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &none            &mt LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL      &kp RCMD  &kp RIGHT_SHIFT  &none        &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                           &mo 9                 &none                                   &kp K   &kp H             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LALT  &kp ENTER          &lt 1 BACKSPACE  &kp LCMD               &kp SPACE             &none     &kp ENTER        &lt 4 SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 2
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3        &kp N4     &kp N5  &trans                                                  &mo 3      &kp N6  &kp KP_NUM    &kp KP_EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp UP_ARROW  &kp R      &kp T   &none                                                   &none      &kp Y   &kp KP_N7     &kp KP_N8     &kp KP_N9             &kp KP_MINUS           &kp SLASH
-&kp ESC    &kp A      &kp LEFT  &kp DOWN      &kp RIGHT  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL  &none      &kp H   &kp KP_N4     &kp KP_N5     &kp KP_N6             &kp KP_PLUS            &kp KP_MULTIPLY
-&kp LSHFT  &kp Z      &kp X     &kp C         &kp V      &kp B                        &none         &none                           &kp N   &kp KP_N1     &kp KP_N2     &kp KP_N3             &kp KP_ENTER           &kp ENTER
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT      &kp RIGHT          &kp BSPC  &kp DEL    &none         &none     &kp ENTER  &kp KP_N0          &kp NUMBER_0  &kp KP_DOT    &kp KP_DOT            &kp RBKT               &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3        &kp N4     &kp N5  &trans                                                       &mo 3      &kp N6  &kp KP_NUM    &kp KP_EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp UP_ARROW  &kp R      &kp T   &none                                                        &none      &kp Y   &kp KP_N7     &kp KP_N8     &kp KP_N9             &kp KP_MINUS           &kp SLASH
+&kp ESC    &kp A      &kp LEFT  &kp DOWN      &kp RIGHT  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI       &kp RCTRL  &none      &kp H   &kp KP_N4     &kp KP_N5     &kp KP_N6             &kp KP_PLUS            &kp KP_MULTIPLY
+&kp LSHFT  &kp Z      &kp X     &kp C         &kp V      &kp B                        &none         &none                                &kp N   &kp KP_N1     &kp KP_N2     &kp KP_N3             &kp KP_ENTER           &kp ENTER
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT      &kp RIGHT          &kp BSPC  &kp DEL    &none         &kp BACKSPACE  &kp SPACE  &kp ENTER          &kp NUMBER_0  &kp KP_DOT    &kp KP_DOT            &kp RBKT               &mo 2
             >;
         };
 
@@ -80,7 +80,7 @@
         symbol {
             bindings = <
 &trans  &trans  &trans     &trans          &trans  &trans  &trans                                      &trans  &trans         &trans   &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans          &trans  &trans  &trans                                      &trans  &trans         &trans   &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans          &trans  &trans  &trans                                      &trans  &kp DELETE     &trans   &trans     &trans  &trans  &trans
 &trans  &trans  &kp EQUAL  &kp MINUS       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp BACKSPACE  &kp TAB  &kp SPACE  &trans  &trans  &trans
 &trans  &trans  &kp PLUS   &kp UNDERSCORE  &trans  &trans                  &trans      &trans                  &trans         &trans   &trans     &trans  &trans  &trans
 &trans  &trans  &trans     &trans          &trans          &trans  &trans  &trans      &trans  &trans  &trans                 &trans   &trans     &trans  &trans  &trans
