@@ -81,7 +81,7 @@
             bindings = <
 &trans  &trans  &trans     &trans          &trans  &trans  &trans                                      &trans  &trans      &trans         &trans     &trans   &trans  &trans
 &trans  &trans  &trans     &trans          &trans  &trans  &trans                                      &trans  &kp DELETE  &trans         &trans     &trans   &trans  &trans
-&trans  &trans  &kp EQUAL  &kp MINUS       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &none       &kp BACKSPACE  &kp SPACE  &kp TAB  &trans  &trans
+&trans  &trans  &kp EQUAL  &kp MINUS       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp ENTER   &kp BACKSPACE  &kp SPACE  &kp TAB  &trans  &trans
 &trans  &trans  &kp PLUS   &kp UNDERSCORE  &trans  &trans                  &trans      &trans                  &trans      &trans         &trans     &trans   &trans  &trans
 &trans  &trans  &trans     &trans          &trans          &trans  &trans  &trans      &trans  &trans  &trans              &trans         &trans     &trans   &trans  &trans
             >;
