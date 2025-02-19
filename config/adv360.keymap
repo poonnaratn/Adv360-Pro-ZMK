@@ -25,7 +25,7 @@
         tothaionmac: tothaionmac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog 6>;
+            bindings = <&kp CAPSLOCK &tog 10>;
             label = "TOTHAIONMAC";
         };
     };
@@ -38,7 +38,7 @@
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                                &mo 3        &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tothaionmac                                                                                          &none        &kp J   &kp L             &kp U              &kp Y                 &kp SEMICOLON          &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &to 6            &mt LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL      &kp RCMD       &kp RIGHT_SHIFT          &none        &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 10          &mt LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL      &kp RCMD       &kp RIGHT_SHIFT          &none        &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                           &mo 5                 &kp RIGHT_ALT                                        &kp K   &kp H             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
 &mo 2      &kp GRAVE  &kp CAPS  &kp LALT  &kp ENTER          &lt 1 BACKSPACE  &kp LCMD               &kp SPACE             &none          &mt RIGHT_CONTROL ENTER  &lt 4 SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 2
             >;
@@ -101,17 +101,6 @@
             label = "Control";
         };
 
-        qwerty {
-            display-name = "qwerty";
-            bindings = <
-&kp EQUAL  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
-&kp TAB    &kp Q      &kp W   &kp E   &kp R   &kp T   &trans                                      &trans  &kp Y   &kp U             &kp I              &kp O                 &kp P                  &kp BSLH
-&kp ESC    &kp A      &kp S   &kp D   &kp F   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J             &kp K              &kp L                 &kp SEMI               &kp SQT
-&kp LSHFT  &kp Z      &kp X   &kp C   &kp V   &kp B                   &trans      &trans                  &kp N   &kp M             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
-&mo 2      &kp GRAVE  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 2
-            >;
-        };
-
         extra1 {
             display-name = "Red";
             status = "reserved";
@@ -130,6 +119,17 @@
         extra4 {
             display-name = "Yellow";
             status = "reserved";
+        };
+
+        qwerty {
+            display-name = "qwerty";
+            bindings = <
+&kp EQUAL  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &trans                                                                                 &trans       &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E   &kp R   &kp T   &trans                                                                                 &trans       &kp Y   &kp U             &kp I              &kp O                 &kp P                  &kp BSLH
+&kp ESC    &kp A      &kp S   &kp D   &kp F   &kp G   &trans           &mt LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL      &trans  &trans           &trans       &kp H   &kp J             &kp K              &kp L                 &kp SEMI               &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C   &kp V   &kp B                                           &mo 5                 &trans                                &kp N   &kp M             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
+&mo 2      &kp GRAVE  &trans  &trans  &trans          &lt 1 BACKSPACE  &kp LEFT_WIN           &kp SPACE             &trans  &mt RCTRL ENTER  &lt 4 SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 2
+            >;
         };
     };
 };
