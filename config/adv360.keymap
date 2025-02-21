@@ -81,11 +81,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3        &kp N4     &kp N5  &trans                                                       &none      &kp N6  &none         &kp KP_EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp UP_ARROW  &kp R      &kp T   &none                                                        &none      &kp Y   &kp KP_N7     &kp KP_N8     &kp KP_N9             &kp KP_MINUS           &kp SLASH
-&kp ESC    &kp A      &kp LEFT  &kp DOWN      &kp RIGHT  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI       &kp RCTRL  &none      &kp H   &kp KP_N4     &kp KP_N5     &kp KP_N6             &kp KP_PLUS            &kp KP_MULTIPLY
-&kp LSHFT  &kp Z      &kp X     &kp C         &kp V      &kp B                        &none         &none                                &kp N   &kp KP_N1     &kp KP_N2     &kp KP_N3             &kp KP_ENTER           &kp ENTER
-&mo 3      &kp GRAVE  &trans    &trans        &trans             &kp BSPC  &kp DEL    &none         &kp BACKSPACE  &kp SPACE  &kp ENTER          &kp NUMBER_0  &kp KP_DOT    &kp KP_DOT            &kp RBKT               &mo 3
+&kp EQUAL  &kp N1     &kp N2    &kp N3        &kp N4     &kp N5  &trans                                                       &none      &kp N6  &none      &kp KP_EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp UP_ARROW  &kp R      &kp T   &none                                                        &none      &kp Y   &kp KP_N7  &kp KP_N8     &kp KP_N9             &kp KP_MINUS           &kp SLASH
+&kp ESC    &kp A      &kp LEFT  &kp DOWN      &kp RIGHT  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI       &kp RCTRL  &none      &kp H   &kp KP_N4  &kp KP_N5     &kp KP_N6             &kp KP_PLUS            &kp KP_MULTIPLY
+&kp LSHFT  &kp Z      &kp X     &kp C         &kp V      &kp B                        &none         &none                                &kp N   &kp KP_N1  &kp KP_N2     &kp KP_N3             &kp KP_ENTER           &kp ENTER
+&mo 3      &kp GRAVE  &trans    &trans        &trans             &kp BSPC  &kp DEL    &none         &kp BACKSPACE  &kp SPACE  &kp ENTER          &kp KP_N0  &kp KP_DOT    &kp KP_DOT            &kp RBKT               &mo 3
             >;
         };
 
