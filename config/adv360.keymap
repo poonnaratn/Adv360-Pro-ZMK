@@ -30,7 +30,6 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <200>;
             flavor = "balanced";
-            retro-tap;
         };
 
         thumb_layer: thumb_layer {
@@ -60,7 +59,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 3                                                                                                                  &mo 6                 &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 6                                                                                                                  &mo 6                 &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tothaionmac                                                                                                            &none                 &kp J   &kp L             &kp U              &kp Y                 &kp SEMICOLON          &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 1                             &mt LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL      &kp RCMD       &kp RIGHT_SHIFT          &tog 3                &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                                             &mo 5                 &kp RIGHT_ALT                                                 &kp K   &kp H             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
@@ -81,11 +80,11 @@
 
         cmd {
             bindings = <
-&trans  &trans  &trans    &trans    &trans     &trans  &trans                                      &trans     &trans      &trans         &trans     &trans   &trans     &trans
-&trans  &trans  &trans    &kp UP    &trans     &trans  &trans                                      &trans     &kp DELETE  &kp DEL        &trans     &trans   &trans     &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &kp ENTER   &kp BACKSPACE  &kp SPACE  &kp TAB  &trans     &trans
-&trans  &trans  &trans    &trans    &trans     &trans                  &trans      &trans                     &trans      &trans         &trans     &trans   &kp ENTER  &trans
-&trans  &trans  &trans    &trans    &trans             &trans  &trans  &trans      &trans  &trans  &kp ENTER              &trans         &trans     &trans   &trans     &trans
+&trans  &trans  &trans    &trans    &trans     &trans  &trans                                          &trans     &trans      &trans         &trans     &trans   &trans  &trans
+&trans  &trans  &trans    &kp UP    &trans     &trans  &trans                                          &trans     &kp DELETE  &kp DEL        &trans     &trans   &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans        &trans    &trans  &trans     &kp ENTER   &kp BACKSPACE  &kp SPACE  &kp TAB  &trans  &trans
+&trans  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                  &kp BSPC      &kp BSPC                     &kp N6      &kp N7         &kp N8     &kp N9   &kp N0  &trans
+&trans  &trans  &trans    &trans    &trans             &trans  &trans  &trans        &trans    &trans  &kp ENTER              &trans         &trans     &trans   &trans  &trans
             >;
 
             label = "Command";
@@ -93,11 +92,11 @@
 
         number {
             bindings = <
-&trans     &trans         &trans      &trans         &trans        &trans         &trans                                      &trans  &trans         &trans         &trans        &trans        &trans        &trans
-&trans     &kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &trans                                      &trans  &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)  &kp COLON     &trans
-&trans     &kp N1         &kp N2      &kp N3         &kp N4        &kp N5         &trans  &trans  &trans      &trans  &trans  &trans  &kp N6         &kp N7         &kp N8        &kp N9        &kp N0        &trans
-&kp LSHFT  &kp TILDE      &kp PIPE    &kp BSLH       &kp LS(PLUS)  &kp EQUAL                      &trans      &trans                  &kp MINUS      &kp LS(UNDER)  &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
-&trans     &kp LS(TILDE)  &trans      &trans         &trans                       &trans  &trans  &trans      &trans  &trans  &trans                 &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(LPAR)  &kp LS(RPAR)  &trans
+&trans     &trans           &trans           &trans           &trans           &trans           &trans                                      &trans  &trans           &trans           &trans           &trans                &trans           &trans
+&trans     &kp EXCLAMATION  &kp AT           &kp HASH         &kp DLLR         &kp PRCNT        &trans                                      &trans  &kp LCTRL        &kp AMPERSAND    &kp ASTERISK     &kp SEMICOLON         &kp COLON        &trans
+&trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans  &trans  &trans      &trans  &trans  &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_N8        &kp KP_NUMBER_9       &kp KP_NUMBER_0  &trans
+&kp LSHFT  &kp TILDE        &kp PIPE         &kp BSLH         &kp PLUS         &kp EQUAL                        &trans      &trans                  &kp MINUS        &kp UNDER        &kp COMMA        &kp DOT               &kp FSLH         &kp RSHFT
+&trans     &kp TILDE        &trans           &trans           &trans                            &trans  &trans  &trans      &trans  &trans  &trans                   &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RPAR         &trans
             >;
 
             label = "Number";
@@ -106,7 +105,7 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 0                                      &mo 6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &none                                       &none   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
