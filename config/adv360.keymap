@@ -59,7 +59,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 5                                                                                                                  &mo 6                 &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 7                                                                                                                  &mo 6                 &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tothaionmac                                                                                                            &none                 &kp J   &kp L             &kp U              &kp Y                 &kp SEMICOLON          &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 1                             &mt LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL      &kp RCMD       &kp RIGHT_CONTROL        &tog 3                &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                                             &mo 5                 &kp RIGHT_ALT                                                 &kp K   &kp H             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
@@ -116,8 +116,8 @@
         controller {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                                          &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &out OUT_USB  &trans        &kp UP        &out OUT_BLE  &trans                                                          &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans  &trans  &trans      &trans                &kp K_MUTE    &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &out OUT_USB  &kp UP        &trans        &out OUT_BLE  &trans                                                          &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans  &trans  &trans      &trans                &kp K_MUTE    &trans           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans                        &trans      &kp C_BRIGHTNESS_INC                                 &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN  &kp C_VOLUME_UP          &trans  &trans  &trans  &trans  &trans
             >;
@@ -132,6 +132,18 @@
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
+        };
+
+        gaming {
+            bindings = <
+&trans          &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp I   &kp Q   &kp W   &kp R   &kp T   &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp G   &kp A   &kp S   &kp D   &kp F   &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp B   &kp Z   &kp X   &kp C   &kp V                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "Gaming";
         };
 
         extra1 {
