@@ -139,7 +139,7 @@
             bindings = <
 &trans          &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans     &trans    &trans
 &trans          &kp T   &kp Q   &kp W   &kp E   &kp R   &trans                                                                    &trans  &kp Y   &kp U   &kp I   &kp O      &kp P     &trans
-&trans          &kp R   &kp A   &kp S   &kp D   &kp F   &kp G                              &trans     &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L      &kp SEMI  &trans
+&trans          &kp G   &kp A   &kp S   &kp D   &kp F   &kp G                              &trans     &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L      &kp SEMI  &trans
 &kp LEFT_SHIFT  &kp B   &kp Z   &kp X   &kp C   &kp V                                                 &trans      &trans                  &kp B   &kp N   &kp M   &kp COMMA  &kp DOT   &trans
 &kp LCTRL       &trans  &trans  &trans  &trans          &thumb_layer_spacebar 5 BACKSPACE  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans     &trans    &trans
             >;
