@@ -63,7 +63,7 @@
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tothaionmac                                                                                                            &tog 5                &kp J   &kp L             &kp U              &kp Y                 &kp SEMICOLON          &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 1                             &mt LEFT_SHIFT ESCAPE  &kp LEFT_CONTROL      &kp RCMD       &kp RIGHT_CONTROL        &tog 3                &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                                             &mo 5                 &kp RIGHT_ALT                                                 &kp K   &kp H             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
-&mo 4      &kp GRAVE  &kp CAPS  &kp LALT  &kp ENTER          &thumb_layer_spacebar 2 BACKSPACE  &mt LCMD DELETE        &kp SPACE             &none          &mt RIGHT_CONTROL ENTER  &thumb_layer 3 SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 4
+&mo 4      &kp TILDE  &kp CAPS  &kp LALT  &kp ENTER          &thumb_layer_spacebar 2 BACKSPACE  &mt LCMD DELETE        &kp SPACE             &none          &mt RIGHT_CONTROL ENTER  &thumb_layer 3 SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 4
             >;
         };
 
@@ -80,11 +80,11 @@
 
         cmd {
             bindings = <
-&trans  &trans  &trans    &trans    &trans     &trans  &trans                                          &trans     &trans      &trans         &trans     &trans   &trans  &trans
-&trans  &trans  &trans    &kp UP    &trans     &trans  &trans                                          &trans     &kp DELETE  &kp DEL        &trans     &trans   &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans        &trans    &trans  &trans     &kp ENTER   &kp BACKSPACE  &kp SPACE  &kp TAB  &trans  &trans
-&trans  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                  &kp BSPC      &kp BSPC                     &kp N6      &kp N7         &kp N8     &kp N9   &kp N0  &trans
-&trans  &trans  &trans    &trans    &trans             &trans  &trans  &trans        &trans    &trans  &kp ENTER              &trans         &trans     &trans   &trans  &trans
+&trans  &trans  &trans          &trans    &trans     &trans  &trans                                          &trans     &trans      &trans         &trans       &trans         &trans  &trans
+&trans  &trans  &trans          &kp UP    &trans     &trans  &trans                                          &trans     &kp DELETE  &kp DEL        &kp PAGE_UP  &kp PAGE_DOWN  &trans  &trans
+&trans  &trans  &kp LEFT        &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans        &trans    &trans  &trans     &kp ENTER   &kp BACKSPACE  &kp SPACE    &kp TAB        &trans  &trans
+&trans  &kp N1  &kp N2          &kp N3    &kp N4     &kp N5                  &kp BSPC      &kp BSPC                     &kp N6      &kp N7         &kp N8       &kp N9         &kp N0  &trans
+&trans  &trans  &kp KP_NUMLOCK  &trans    &trans             &trans  &trans  &trans        &trans    &trans  &kp ENTER              &trans         &trans       &trans         &trans  &trans
             >;
 
             label = "Command";
@@ -93,10 +93,10 @@
         number {
             bindings = <
 &trans     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                                      &trans  &trans           &trans           &trans           &trans                &trans                &trans
-&trans     &kp EXCLAMATION    &kp AT           &kp HASH         &kp DLLR              &kp PRCNT              &trans                                      &trans  &kp LCTRL        &kp AMPERSAND    &kp ASTERISK     &kp SEMICOLON         &kp COLON             &trans
+&trans     &kp EXCLAMATION    &kp AT           &kp HASH         &kp DLLR              &kp PRCNT              &trans                                      &trans  &kp CARET        &kp AMPERSAND    &kp ASTERISK     &kp SEMICOLON         &kp COLON             &trans
 &trans     &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4       &kp KP_NUMBER_5        &trans  &trans  &trans      &trans  &trans  &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_N8        &kp KP_NUMBER_9       &kp KP_NUMBER_0       &trans
 &kp LSHFT  &kp DOUBLE_QUOTES  &kp MINUS        &kp UNDERSCORE   &kp PLUS              &kp EQUAL                              &trans      &trans                  &kp PIPE         &kp SLASH        &kp COMMA        &kp DOT               &kp NON_US_BACKSLASH  &kp RSHFT
-&trans     &kp TILDE          &kp SQT          &kp ASTERISK     &kp SLASH                                    &trans  &trans  &trans      &trans  &trans  &trans                   &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RPAR              &trans
+&trans     &kp GRAVE          &kp KP_NUM       &kp ASTERISK     &kp SLASH                                    &trans  &trans  &trans      &trans  &trans  &trans                   &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RPAR              &trans
             >;
 
             label = "Number";
@@ -139,7 +139,7 @@
             bindings = <
 &trans          &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans     &trans    &trans
 &trans          &kp T   &kp Q   &kp W   &kp E   &kp R   &trans                                                                    &trans  &kp Y   &kp U   &kp I   &kp O      &kp P     &trans
-&trans          &kp R   &kp A   &kp S   &kp D   &kp F   &trans                             &trans     &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L      &kp SEMI  &trans
+&trans          &kp R   &kp A   &kp S   &kp D   &kp F   &kp G                              &trans     &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L      &kp SEMI  &trans
 &kp LEFT_SHIFT  &kp B   &kp Z   &kp X   &kp C   &kp V                                                 &trans      &trans                  &kp B   &kp N   &kp M   &kp COMMA  &kp DOT   &trans
 &kp LCTRL       &trans  &trans  &trans  &trans          &thumb_layer_spacebar 5 BACKSPACE  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans     &trans    &trans
             >;
