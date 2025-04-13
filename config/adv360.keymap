@@ -59,11 +59,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 7                                                                                                           &mo 6                 &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tothaionmac                                                                                                     &tog 5                &kp J   &kp L             &kp U              &kp Y                 &kp SEMICOLON          &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 1                             &kp LCTRL  &mo 5                      &kp RCTRL      &kp RMETA                &tog 3                &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                                 &mt LEFT_SHIFT ESCAPE      &kp RIGHT_ALT                                                 &kp K   &kp H             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
-&mo 4      &kp TILDE  &kp CAPS  &kp LALT  &kp ENTER          &thumb_layer_spacebar 2 BACKSPACE  &kp LCMD   &kp SPACE                  &none          &mt RIGHT_CONTROL ENTER  &thumb_layer 3 SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 4
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 7                                                                                                  &mo 6                 &kp N6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tothaionmac                                                                                            &tog 5                &kp J   &kp L             &kp U              &kp Y                 &kp SEMICOLON          &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 1                             &kp LCTRL  &mo 5             &kp RCTRL      &kp RMETA                &tog 3                &kp M   &kp N             &kp E              &kp I                 &kp O                  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                                 &lt 3 ESCAPE      &kp RIGHT_ALT                                                 &kp K   &kp H             &kp COMMA          &kp DOT               &kp FSLH               &kp RSHFT
+&mo 4      &kp TILDE  &kp CAPS  &kp LALT  &kp ENTER          &thumb_layer_spacebar 2 BACKSPACE  &kp LCMD   &kp SPACE         &none          &mt RIGHT_CONTROL ENTER  &thumb_layer 3 SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 4
             >;
         };
 
